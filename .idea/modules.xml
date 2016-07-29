@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/deps/deps.iml" filepath="$PROJECT_DIR$/deps/deps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/merrillMongo/merrillMongo.iml" filepath="$PROJECT_DIR$/merrillMongo/merrillMongo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/merrillRest/merrillRest.iml" filepath="$PROJECT_DIR$/merrillRest/merrillRest.iml" />
+    </modules>
+  </component>
+</project>

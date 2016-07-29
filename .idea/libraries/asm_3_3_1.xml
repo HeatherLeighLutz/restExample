@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="asm-3.3.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/deps/asm-3.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/jackson-all-1.8.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/jersey-apache-client-1.9-ea04.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/jersey-core-1.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/jersey-server-1.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/jettison-1.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/mongo-java-driver-3.0.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/smack.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
