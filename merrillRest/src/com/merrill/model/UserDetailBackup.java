@@ -6,11 +6,11 @@ import java.util.List;
  * Sample model for using Jackson/JSON ORM to serialize into object
  */
 
-public class UserDetails {
+public class UserDetailBackup {
 	
 	public Profile profile;
 	
-	public List<String> projects;
+	public List<Project> projects;
 	
 	public static class Profile {
 		
@@ -78,6 +78,31 @@ public class UserDetails {
 		
 	}
 	
+	public static class Project {
+		
+		private String projectId;
+		
+		private String projectName;
+
+		public String getProjectId() {
+			return projectId;
+		}
+
+		public void setProjectId(String projectId) {
+			this.projectId = projectId;
+		}
+
+		public String getProjectName() {
+			return projectName;
+		}
+
+		public void setProjectName(String projectName) {
+			this.projectName = projectName;
+		}
+		
+		
+		
+	}
 
 	public Profile getProfile() {
 		return profile;
@@ -87,11 +112,11 @@ public class UserDetails {
 		this.profile = profile;
 	}
 
-	public List<String> getProjects() {
+	public List<Project> getProjects() {
 		return projects;
 	}
 
-	public void setProjects(List<String> projects) {
+	public void setProjects(List<Project> projects) {
 		this.projects = projects;
 	}
 	

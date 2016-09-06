@@ -15,10 +15,11 @@ public class GetCurrentUser {
 			String jwt = JavelinHelper.getJWTToken();					
 			String uri = "/api/dashboard/currentUser";
 			String response = HttpClient.sendGet(uri, jwt);
+			System.out.println(response);
 
 			ObjectMapper mapper = new ObjectMapper();
 			UserDetails user = mapper.readValue(response, UserDetails.class);
-			
+			System.out.println(user);
 			
 		} catch (Throwable e) {
 			e.printStackTrace();

@@ -19,10 +19,10 @@ public class GetAllMetadataSample {
 			ObjectMapper mapper = new ObjectMapper();
 			UserDetails user = mapper.readValue(response, UserDetails.class);
 			
-			for (UserDetails.Project project : user.projects) {
-				String id = project.getProjectId();
+			for (String id : user.projects) {
+				System.out.println(id);
 				uri = "/api/projects/" + id + "/metadata/all";
-				String params = "?level=1";
+				String params = "?level=5";
 				response = HttpClient.sendGet(uri + params, jwt);
 				System.out.println(response);
 			}

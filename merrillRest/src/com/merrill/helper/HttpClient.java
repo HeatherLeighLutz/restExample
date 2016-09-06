@@ -35,6 +35,7 @@ public class HttpClient {
 	    }
 	    ClientResponse response = null;
 	    
+	    long start = System.currentTimeMillis();
 	    switch (method) {
 	    	case PUT:
 	    		response = builder.put(ClientResponse.class, body.toString());
@@ -53,7 +54,13 @@ public class HttpClient {
 	    if (statusCode == 401) {
 	        throw new AuthenticationException("Invalid Username or Password");
 	    }
-	    return response.getEntity(String.class);
+	    // X-client_hit_id
+	    String hitId = response.getHeaders().getFirst("X-CLIENT_HIT_ID");
+	    String responseData = response.getEntity(String.class);
+	    long stop = System.currentTimeMillis();
+	    System.out.println("   > Rest call time, " + (stop - start) + ", header=" + hitId);
+	    
+	    return responseData;
 	}
 	
 	
